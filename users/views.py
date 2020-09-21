@@ -34,7 +34,7 @@ def Profile(request):
         u_form=UserUpdate(instance=request.user)  ## instace is used to populate the fields by the current values and then user can update it
         p_form=ProfileUpdate(instance=request.user.profile)
 
-
+    
     context={
             'u_form':u_form,
             'p_form':p_form
